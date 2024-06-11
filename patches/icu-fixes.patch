@@ -6,7 +6,7 @@ index 2ec8ab4..09af575 100644
        <PreprocessorDefinitions>RBBI_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <OutputFile>..\..\$(IcuBinOutputDir)\icuuc$(IcuMajorVersion)d.dll</OutputFile>
@@ -18,7 +18,7 @@ index 40956b3..30d46a6 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <AdditionalDependencies>icuucd.lib;icuind.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -37,7 +37,7 @@ index 80daa9e..7af38fd 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <AdditionalDependencies>icuucd.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -49,7 +49,7 @@ index 08d6b7c..975ffe9 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -61,7 +61,7 @@ index d0e728d..256e383 100644
    <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
      <ClCompile>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
    </ItemDefinitionGroup>
    <!-- Options that are common to all 'Release' project configurations -->
@@ -73,7 +73,7 @@ index d7c4b7b..5bb1cf2 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <AdditionalDependencies>icuucd.lib;icuind.lib;icutestd.lib;icutud.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -85,7 +85,7 @@ index 1017605..f90566c 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <AdditionalDependencies>icuucd.lib;icuind.lib;icutud.lib;icutestd.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -97,7 +97,7 @@ index f924c3d..db559b1 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <AdditionalDependencies>icuucd.lib;icuind.lib;icuiod.lib;icutestd.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -116,7 +116,7 @@ index 66ec8ea..25de03c 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <OutputFile>..\..\..\$(IcuBinOutputDir)\icutest$(IcuMajorVersion)d.exe</OutputFile>
@@ -128,7 +128,7 @@ index 7671579..8dcd0cc 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <AdditionalDependencies>icuucd.lib;icutud.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -147,7 +147,7 @@ index 9443749..2e48884 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <AdditionalDependencies>icuucd.lib;icutud.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -166,7 +166,7 @@ index e2a0d08..7316884 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <AdditionalDependencies>icuucd.lib;icuind.lib;icutud.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -185,7 +185,7 @@ index f076d62..833a7c1 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <AdditionalDependencies>icuucd.lib;icutud.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -204,7 +204,7 @@ index fd9a179..d3e4ccc 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <AdditionalDependencies>icuucd.lib;icutud.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -223,7 +223,7 @@ index f869374..7ddd933 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <AdditionalDependencies>icuucd.lib;icutud.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -242,7 +242,7 @@ index b906d78..4eab5c4 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <AdditionalDependencies>icuucd.lib;icutud.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -261,7 +261,7 @@ index 409761b..08d16d6 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <AdditionalDependencies>icuucd.lib;icuind.lib;icuiod.lib;icutud.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -280,7 +280,7 @@ index e94de0a..53d6467 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <AdditionalDependencies>icuucd.lib;icuind.lib;icutud.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -299,7 +299,7 @@ index c0ce109..c1b0126 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <AdditionalDependencies>icuucd.lib;icutud.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -318,7 +318,7 @@ index 9d031fb..daeabb7 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <AdditionalDependencies>icuucd.lib;icutestd.lib;icutud.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -337,7 +337,7 @@ index c77c02f..1cc2955 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <AdditionalDependencies>icuucd.lib;icutud.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -356,7 +356,7 @@ index 64c8300..12a6935 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <AdditionalDependencies>icuucd.lib;icuind.lib;icutud.lib;icutestd.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -375,7 +375,7 @@ index 2ea4246..e3b3417 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -394,7 +394,7 @@ index 55d45bd..b73b6e6 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <AdditionalDependencies>icuucd.lib;icutud.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -413,7 +413,7 @@ index 3def33e..e38c956 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <AdditionalDependencies>icuucd.lib;icutud.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -432,7 +432,7 @@ index 1805d8a..8494127 100644
      <ClCompile>
        <BrowseInformation>true</BrowseInformation>
        <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
++      <AdditionalOptions Condition="'$(Configuration)'=='Release'">/D_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR %(AdditionalOptions)</AdditionalOptions>
      </ClCompile>
      <Link>
        <AdditionalDependencies>icuucd.lib;icutud.lib;%(AdditionalDependencies)</AdditionalDependencies>
